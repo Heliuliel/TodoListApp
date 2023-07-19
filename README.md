@@ -1,4 +1,5 @@
 # Todo List App
+<img width="942" alt="screenshot" src="https://github.com/Heliuliel/TodoListApp-frontend/assets/133891329/637346dd-1043-4d59-991b-2a0dfd3ddab3">
 
 ## Description
 
