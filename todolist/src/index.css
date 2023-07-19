@@ -1,0 +1,147 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css?family=Aclonica');
+
+/* layout */
+:root {
+  --primary: #ac98ed;
+  --error: #e7195a;
+}
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family: "Aclonica";
+}
+header {
+  background: #fff;
+}
+header .container {
+  margin: 0 auto;
+  max-width: 1400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header a {
+  color:var(--primary);
+  text-decoration: none;
+}
+.pages{
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+/* homepage */
+.home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
+}
+/* task details */
+.task-details{
+  position: relative;
+  background: #fff;
+  border-radius: 4px;
+  margin: 10px auto;
+  padding: 20px  ;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+  align-content: center;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.task-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: var(--primary);
+}
+.task-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+.done{
+  text-decoration:line-through solid black 2px;
+}
+.task-details i {
+  margin-right: 10px;
+  top: -60px;
+  right: 0;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+}
+#done{
+  background: #9ae49c;
+}
+#delete{
+  background: var(--error);
+}
+
+/* new task form */
+.create-task{
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  width: 100%;
+}
+.backdrop{
+  backdrop-filter: blur(2px);
+  inset: 0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  z-index:100;
+}
+label, input ,select{
+  display: block;
+}
+input,select, option {
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Aclonica";
+}
+.create-task button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Aclonica";
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+.error {
+  border: 1px solid var(--error);
+}
+/* popup trigger */
+.open-popup{
+  position: sticky;
+  border: 3px dotted black;
+  display: inline;
+  padding: 10px;
+  cursor: pointer;
+}
+.open-popup span{
+  position: relative;
+  border-radius: 50%;
+  color: #333;
+}
